@@ -112,7 +112,7 @@ a {
 }
 
 .textImage {
-    font-size: 25px;
+    font-size: 170%;
     margin-bottom: 150px;
     color: #f2f4f3;
 }
@@ -191,10 +191,19 @@ h1 {
     margin-bottom: 10px;
 }
 
+.backgroundWelcome:hover {
+    opacity: .6;
+    transition: opacity 0.3s ease-in;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 0;
     text-align: justify;
+}
+
+h4 {
+    font-size: 15px;
 }
 
 .title {
@@ -242,6 +251,17 @@ input {
 
 .imageAbout {
     width: 250px;
+    animation: firstAnimation 5s ease-in 0s 1 normal forwards;
+}
+
+@keyframes firstAnimation {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
 }
 
 .aboutSection {
@@ -292,6 +312,108 @@ input {
     padding-left: 100px;
 }
 
+/* Collaborate */
+
+.cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card {
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.cardFront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBack {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.cardFront h1 {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.cardBack p {
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.cardOne {
+    background: url(/assets/images/);
+}
+
+.cardTwo {
+    background: url(/assets/images/apadrina.jpg);
+}
+
+.cardThree {
+    background: url(/assets/images/);
+}
+
+.cardFour {
+    background: url(/assets/images/);
+}
+
+.cardFive {
+    background: url(/assets/images/);
+}
+
+.cardSix {
+    background: url(/assets/images/);
+}
+
 /* Contact */
 
 .containerForm {
@@ -308,6 +430,19 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: secondAnimation 1s ease 0s 1 normal forwards;
+}
+
+@keyframes secondAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .containerForm h2 {
@@ -344,12 +479,35 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: secondAnimation 1s ease 0s 1 normal forwards;
+}
+
+@keyframes secondAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .containerForm a i {
     color: #344e41;
     margin-right: 10;
     font-size: 30px;
+}
+
+.formSelect {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #344e41;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
 }
 
 .containerForm form .field,
@@ -381,7 +539,7 @@ footer {
     width: 100%;
     padding: 50px 0;
     background-color: #344e41;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .socialContainer {
@@ -451,5 +609,188 @@ footer {
     color: white;
 }
 
-
 /* Media queries - responsive */
+
+@media screen and (max-width: 1480px) {
+
+    .textImage {
+        font-size: 140%;
+    }
+
+}
+
+@media screen and (max-width: 1225px) {
+    
+    .textImage {
+        font-size: 120%;
+    }
+
+}
+
+@media screen and (max-width: 1130px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textImage {
+        font-size: 100%;
+    }
+
+    .infoWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoLeft {
+        width: 100%;
+        padding: 0;
+    }
+
+    .aboutInfoButton {
+        padding-top: 70px;
+    }
+
+    .infoRight {
+        padding-top: 100px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1060px) {
+
+    .containerForm {    
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .socialsForm {
+        width: 25%;
+    }
+
+    .sectionForm {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+
+
+@media screen and (max-width: 755px) {
+
+    .navLinks {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .top {
+        height: 350px;
+        background-position: center;
+    }
+
+    .navLinks a, button {
+        font-size: 12px;
+    }
+
+    .textImage {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialContainer {
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 445px)  {
+
+    /* Informacion de bienvenida */
+
+    .logoImage {
+        width: 200px;
+    }
+
+    .infoWrapper {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .backgroundWelcome {
+        margin-right: 15px;
+        min-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .title {
+        font-size: 15px;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .infoContainer p {
+        font-size: 13px;
+    }
+
+    .infoRight {
+        padding-top: 150px;
+        width: 100%;
+    }
+
+    .infoLeft {
+        width: 100%;
+        padding: 0;
+    }
+
+    .infoLeft h1 {
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+/* Contact */
+
+    .infoForm {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .socialsForm {
+        width: 50%;
+    }
+
+/* Footer */
+
+    .logoFooter {
+        width: 200px;
+    }
+
+    .footerText {
+        font-size: 13px;
+    }
+
+    .socialText {
+        font-size: 15px;
+    }
+
+    .socialButtons .icon span i {
+        line-height: 35px;
+        font-size: 15px;
+    }
+
+    .socialButtons .icon span {
+        width: 35px;
+        height: 35px;
+    }
+
+}
