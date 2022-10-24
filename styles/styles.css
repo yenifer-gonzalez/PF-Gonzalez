@@ -35,12 +35,6 @@ header {
     text-align: justify;
 }
 
-/* NAV */
-
-/* Nav hamburger */
-
-
-
 /* Nav links */
 
 li,
@@ -312,6 +306,39 @@ input {
     padding-left: 100px;
 }
 
+.adoptWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.petSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.petSection h3 {
+    box-shadow: inset 0 0 0 0 #344e41;
+    color: #344e41;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.petSection h3:hover {
+    box-shadow: inset 250px 0 0 0 #344e41;
+    color: white;
+}
+
+.adoptImages {
+    width: 300px;
+    border-radius: 50%;
+    padding-bottom: 25px;
+}
+
 /* Collaborate */
 
 .cardWrapper {
@@ -329,7 +356,6 @@ input {
     align-items: center;
     width: 100%;
     height: 100%;
-
 }
 
 .card {
@@ -395,7 +421,7 @@ input {
 }
 
 .cardTwo {
-    background: url(/assets/images/apadrina.jpg);
+    background: url(/assets/images/);
 }
 
 .cardThree {
