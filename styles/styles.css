@@ -107,8 +107,11 @@ a {
 
 .textImage {
     font-size: 170%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-bottom: 150px;
     color: #f2f4f3;
+    text-align: center;
 }
 
 /* Images top */
