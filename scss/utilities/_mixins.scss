@@ -1,0 +1,18 @@
+@mixin flex($directionValue: row, $justify: flex-start, $alignItems: stretch) {
+  display: flex;
+  @if ($directionValue == "_") {
+    flex-direction: row;
+  } @else {
+    flex-direction: $directionValue;
+  }
+  @if ($justify == "_") {
+    justify-content: flex-start;
+  } @else {
+    justify-content: $justify;
+  }
+  @if ($alignItems == "_") {
+    align-items: stretch;
+  } @else {
+    align-items: $alignItems;
+  }
+}

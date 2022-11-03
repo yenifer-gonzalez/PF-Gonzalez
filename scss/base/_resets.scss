@@ -1,0 +1,15 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+
+  &::selection {
+    background-color: $primaryColor;
+    color: $tertiaryColor;
+  }
+}
+
+body {
+  background-color: $backgroundColor;
+  margin: 0;
+  padding: 0;
+}

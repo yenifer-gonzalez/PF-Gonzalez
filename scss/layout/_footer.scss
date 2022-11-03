@@ -1,0 +1,66 @@
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: $primaryColor;
+  margin-top: 100px;
+
+  .mainContent {
+    @include flex(row, space-around, center);
+    .textSection {
+      @include flex(column, _, center);
+
+      .logoFooter {
+        width: 275px;
+      }
+
+      .footerLine {
+        width: 100%;
+      }
+
+      .footerText {
+        font-size: 15px;
+        color: white;
+      }
+    }
+
+    .socialContainer {
+      @include flex(column, _, center);
+
+      .socialText {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: white;
+      }
+
+      .socialButtons {
+        display: inline-flex;
+
+        .icon {
+          margin: 0 20px;
+          cursor: pointer;
+
+          span {
+            height: 60px;
+            width: 60px;
+            display: inline-block;
+            background: white;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+            i {
+              line-height: 60px;
+              font-size: 25px;
+
+              &:hover {
+                color: $primaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

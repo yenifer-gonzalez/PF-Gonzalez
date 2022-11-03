@@ -1,0 +1,54 @@
+header {
+  @include flex(row, space-between, center);
+  padding: 20px 5%;
+
+  li,
+  a,
+  button {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a {
+    color: $primaryColor;
+  }
+
+  .logoImage {
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .navLinks {
+    list-style: none;
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+      padding: 0px 20px;
+
+      a {
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+          color: $secondaryColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .collabButton {
+    color: white;
+    padding: 9px 25px;
+    background-color: $secondaryColor;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: $primaryColor;
+    }
+  }
+}
