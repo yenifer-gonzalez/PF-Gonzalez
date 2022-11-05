@@ -5,3 +5,19 @@
 .justifyText {
   text-align: justify;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.hyperlink {
+  color: $primaryColor;
+
+  &:hover {
+    color: $secondaryColor;
+
+    &:visited {
+      color: $tertiaryColor;
+    }
+  }
+}

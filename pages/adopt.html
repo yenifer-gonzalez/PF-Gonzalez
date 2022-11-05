@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="Adoptando un animal salvarás dos vidas: la de tu nuevo compañero y la de otro abandonado que ocupará su lugar en nuestro centro."
+    />
+    <meta name="keywords" content="Refugio animal, HTML, Coderhouse" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,6 +37,16 @@
       <a href="../index.html"
         ><img class="logoImage" src="../assets/Logo.png" alt="logo"
       /></a>
+      <a
+        class="menuButton"
+        data-bs-toggle="collapse"
+        href="#collapseRef"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseRef"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </a>
       <nav>
         <ul class="navLinks">
           <li><a href="../index.html">INICIO</a></li>
@@ -44,6 +59,17 @@
         </ul>
       </nav>
     </header>
+    <div class="collapse collapseWrapper" id="collapseRef">
+      <nav>
+        <ul class="collapseNav">
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./about.html">SOBRE</a></li>
+          <li><a href="#">ADOPCIONES</a></li>
+          <li><a href="./contact.html">CONTACTO</a></li>
+          <li><a href="./collaborate.html">COLABORAR</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="top adoptTop">
       <p class="textImage">

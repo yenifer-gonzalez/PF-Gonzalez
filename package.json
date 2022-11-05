@@ -1,7 +1,7 @@
 {
   "name": "proyecto-coder",
   "version": "1.0.0",
-  "description": "Las páginas **resposivas** son el index y el contacto.\r Las animaciones son simples pero están en el contacto y en la sección de colaborar, algunos hovers sencillos en el index, el nav y el footer. \r Todas las páginas están estructuradas con flexbox o con grid, aunque a algunas les falta algun que otro contenido y algunos detalles que agregar/corregir.",
+  "description": "Refugio Animal Huellitas. Animal Shelter. Albergamos más de 500 animales, entre perros y gatos, en Uruguay. Adoptar es regalar una segunda oportunidad.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yenifer-gonzalez/PreEntrega2-Gonzalez.git"
+    "url": "git+https://github.com/yenifer-gonzalez/PreEntrega3-Gonzalez.git"
   },
-  "author": "",
+  "author": "Yenifer Gonzalez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yenifer-gonzalez/PreEntrega2-Gonzalez/issues"
+    "url": "https://github.com/yenifer-gonzalez/PreEntrega3-Gonzalez/issues"
   },
-  "homepage": "https://github.com/yenifer-gonzalez/PreEntrega2-Gonzalez#readme",
+  "homepage": "https://github.com/yenifer-gonzalez/PreEntrega3-Gonzalez#readme",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"

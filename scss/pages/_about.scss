@@ -1,37 +1,27 @@
-.imageAbout {
-  width: 250px;
-  animation: firstAnimation 5s ease-in 0s 1 normal forwards;
-}
-
-@keyframes firstAnimation {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-
 .aboutSection {
-  display: flex;
+  @include flex(column, _, _);
   padding-top: 100px;
   padding-left: 15%;
   padding-right: 15%;
-  flex-direction: column;
-}
 
-.aboutInfo {
-  display: flex;
-  padding-bottom: 100px;
-}
+  .aboutInfo {
+    @include flex();
+    padding-bottom: 100px;
 
-.aboutFirstText {
-  margin-right: 0;
-  margin-left: 40px;
-}
+    .imageAbout {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
 
-.aboutSecondText {
-  margin-left: 0;
-  margin-right: 40px;
+    .aboutFirstText {
+      margin-right: 0;
+      margin-left: 40px;
+    }
+
+    .aboutSecondText {
+      margin-left: 0;
+      margin-right: 40px;
+    }
+  }
 }

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="REFUGIO HUELLITAS brinda refugio y cuidado para mascotas. Albergamos 500 animales en Uruguay. Adoptar es regalar una segunda oportunidad."
+    />
+    <meta name="keywords" content="Refugio animal, HTML, Coderhouse" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +35,16 @@
   <body>
     <header>
       <a href="#"><img class="logoImage" src="assets/Logo.png" alt="logo" /></a>
+      <a
+        class="menuButton"
+        data-bs-toggle="collapse"
+        href="#collapseRef"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseRef"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </a>
       <nav>
         <ul class="navLinks">
           <li><a href="#">INICIO</a></li>
@@ -42,6 +57,17 @@
         </ul>
       </nav>
     </header>
+    <div class="collapse collapseWrapper" id="collapseRef">
+      <nav>
+        <ul class="collapseNav">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="pages/about.html">SOBRE</a></li>
+          <li><a href="pages/adopt.html">ADOPCIONES</a></li>
+          <li><a href="pages/contact.html">CONTACTO</a></li>
+          <li><a href="pages/collaborate.html">COLABORAR</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="top homeTop">
       <p class="textImage">
@@ -90,8 +116,12 @@
           <div>
             <h1 class="title">CÓMO AYUDAR</h1>
             <p class="justifyText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Desde realizar un <span class="bold">donativo</span> para poder
+              financiar nuestro trabajo hasta
+              <span class="bold">difundir</span> en redes sociales, ¡hay muchas
+              maneras de
+              <a class="hyperlink" href="pages/collaborate.html">apoyar</a>
+              nuestro programa!
             </p>
           </div>
         </div>
@@ -103,8 +133,9 @@
           <div>
             <h1 class="title">CÓMO SE UTILIZARÁ TU APOYO</h1>
             <p class="justifyText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Cada cosa que brindes a nuestro refugio será para poder
+              <span class="bold">brindar</span> la atención necesaria a nuestros
+              animalitos. ¡Agradecemos profundamente tu apoyo!
             </p>
           </div>
         </div>
@@ -120,8 +151,9 @@
           <div>
             <h1 class="title">EL IMPACTO DE TU APOYO</h1>
             <p class="justifyText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Al apoyar al Refugio <span class="bold">Huellitas</span> (de la
+              manera que fuese) podemos aumentar nuestro alcance para poder
+              ayudar a más mascotas necesitadas.
             </p>
           </div>
         </div>
