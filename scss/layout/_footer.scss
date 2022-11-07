@@ -37,27 +37,53 @@ footer {
       .socialButtons {
         display: inline-flex;
 
-        .icon {
+        a {
+          @include flex(row, center, center);
           margin: 0 20px;
           cursor: pointer;
+          height: 60px;
+          width: 60px;
+          background: white;
+          text-align: center;
+          border-radius: 50%;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
 
-          span {
-            height: 60px;
-            width: 60px;
-            display: inline-block;
-            background: white;
-            text-align: center;
-            border-radius: 50%;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-
-            i {
-              line-height: 60px;
-              font-size: 25px;
-
-              &:hover {
-                color: $primaryColor;
-              }
+          &:hover {
+            transform: scale(1.2);
+            img {
+              filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(15deg)
+                brightness(107%) contrast(101%);
             }
+
+            &:nth-child(1) {
+              background-color: #4267b2;
+            }
+
+            &:nth-child(2) {
+              background-color: #1da1f2;
+            }
+
+            &:nth-child(3) {
+              background: radial-gradient(
+                circle at 30% 107%,
+                #fdf497 0%,
+                #fdf497 5%,
+                #fd5949 45%,
+                #d6249f 60%,
+                #285aeb 90%
+              );
+            }
+
+            &:nth-child(4) {
+              background-color: #ff0000;
+            }
+          }
+
+          img {
+            height: 30px;
+            filter: invert(26%) sepia(5%) saturate(2962%) hue-rotate(97deg)
+              brightness(83%) contrast(78%);
           }
         }
       }

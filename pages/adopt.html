@@ -9,12 +9,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/e0a558e459.js"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    ></script>
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,59 +22,70 @@
       rel="stylesheet"
     />
     <link rel="icon" href="../assets/favicon.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Adoptar - Refugio Huellitas</title>
   </head>
 
   <body>
     <header>
-      <a href="../index.html"
-        ><img class="logoImage" src="../assets/Logo.png" alt="logo"
-      /></a>
-      <a
-        class="menuButton"
-        data-bs-toggle="collapse"
-        href="#collapseRef"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseRef"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </a>
-      <nav>
-        <ul class="navLinks">
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./about.html">SOBRE</a></li>
-          <li><a href="#">ADOPCIONES</a></li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <a href="./collaborate.html"
-            ><button class="collabButton">COLABORAR</button></a
+      <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+          <a href="../index.html"
+            ><img class="logoImage" src="../assets/Logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </ul>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./about.html"
+                  >SOBRE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >ADOPCIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./collaborate.html"
+                  ><button class="collabButton">COLABORAR</button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="collapse collapseWrapper" id="collapseRef">
-      <nav>
-        <ul class="collapseNav">
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./about.html">SOBRE</a></li>
-          <li><a href="#">ADOPCIONES</a></li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <li><a href="./collaborate.html">COLABORAR</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <section class="top adoptTop">
       <p class="textImage">
-        Trabajamos para fomentar la tenencia responsable y la empatía y respeto
-        ante cualquier forma de vida.
+        Adoptando un animal salvarás dos vidas: la de tu nuevo compañero y la de
+        otro abandonado que ocupará su lugar en nuestro centro.
       </p>
     </section>
 
@@ -86,19 +97,57 @@
           ¿Cuál es el <span class="textColor">proceso</span> de adopción?
         </h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi minima
-          nulla in sed suscipit molestias iure, eveniet, laboriosam ex natus
-          vero culpa voluptatibus quisquam! Numquam sint id quasi praesentium
-          quam.
+          Una vez tomada la importante decisión de adoptar uno de los animales
+          del <span class="bold">Refugio Huellitas</span> comienza la fase de
+          entrevista y primer contacto con nuestros animales. Es importante que
+          todos aquellos que vayan a convivir con el animal acudan al Centro de
+          Adopción para así confirmar que todos están de acuerdo con la
+          adopción. Una vez en el Centro de Adopción uno de los voluntarios
+          realizará una pequeña entrevista para conocer la experiencia de la
+          familia con otros animales, el entorno de su vivienda o las
+          condiciones en las que se encontrará el nuevo miembro, entre otras
+          cuestiones. Además, se informará a la familia sobre las condiciones
+          del Contrato de Adopción y se le ayudará a escoger al animal perfecto
+          entre todos los que se encuentran en el Albergue, con el fin de hacer
+          posible una mejor adaptación y una adopción de éxito. El tiempo que
+          ocupa el total del proceso puede variar en función del número de
+          personal disponible, la cantidad de afluencia de posibles adoptantes y
+          la duración de las propias entrevistas.
         </p>
       </div>
       <div class="adoptInfo">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio
-          veniam officia et! Ab, odio! Est ipsum dicta enim sit praesentium
-          perspiciatis laudantium commodi voluptatum minima consequuntur. Nobis,
-          nesciunt placeat?
-        </p>
+        <div>
+          <p>
+            Cada tipo de mascota es diferente en términos de cuidado,
+            alimentación, comportamiento, vivienda y exigencias del tiempo que
+            hay que dedicarles. Aquí hay algunas preguntas que debes hacerte
+            mientras consideras qué tipo de mascota adoptar:
+          </p>
+          <ul>
+            <li>
+              ¿Qué tipo de animal es el más adecuado para tu hogar?
+              ¿Grande/mediano/pequeño?
+            </li>
+            <li>
+              ¿Podrás vivir en medio de los pelos de tu mascota, una caja de
+              arena, o el daño ocasional a tus pertenencias, causado por las
+              mascotas?
+            </li>
+            <li>
+              Si tienes hijos, ¿cómo les afectará a ellos tener una mascota?
+              ¿Todos en tu casa recibirán con gusto a un animal?
+            </li>
+            <li>
+              Si estás alquilando, ¿el propietario tiene restricciones de peso o
+              raza?
+            </li>
+            <li>
+              ¿Cuál es tu nivel de actividad? Hay mascotas que requieren menos
+              ejercicio, mientras que otras requieren más caminatas y otras
+              oportunidades de dar rienda a su energía.
+            </li>
+          </ul>
+        </div>
         <h3 class="titleAdopt questionsText">
           Preguntas que debes <span class="textColor">considerar</span> antes de
           elegir una mascota
@@ -140,18 +189,18 @@
         <div class="socialContainer">
           <h3 class="socialText">Siguenos en nuestras redes</h3>
           <div class="socialButtons">
-            <div class="icon facebook">
-              <span><i class="fa-brands fa-facebook-f"></i></span>
-            </div>
-            <div class="icon twitter">
-              <span><i class="fa-brands fa-twitter"></i></span>
-            </div>
-            <div class="icon instagram">
-              <span><i class="fa-brands fa-instagram"></i></span>
-            </div>
-            <div class="icon">
-              <span><i class="fa-brands fa-youtube"></i></span>
-            </div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="../assets/icons/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="../assets/icons/twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="../assets/icons/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="../assets/icons/youtube.svg" alt="youtube"
+            /></a>
           </div>
         </div>
       </div>

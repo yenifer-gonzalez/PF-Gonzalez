@@ -34,15 +34,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: secondAnimation 1s ease 0s 1 normal forwards;
 
     .socialsForm {
-      font-size: 15px;
-      display: flex;
-      justify-content: space-around;
-      text-decoration: none;
-      width: 50%;
-      margin-top: 20px;
+      display: inline-flex;
+
+      a {
+        @include flex(row, center, center);
+        margin: 0 20px;
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+        transition: all 0.3s ease;
+
+        img {
+          height: 30px;
+          filter: invert(26%) sepia(5%) saturate(2962%) hue-rotate(97deg)
+            brightness(83%) contrast(78%);
+        }
+
+        &:hover {
+          transform: scale(1.2);
+          img {
+            filter: invert(79%) sepia(18%) saturate(415%) hue-rotate(40deg)
+              brightness(85%) contrast(86%);
+          }
+        }
+      }
     }
   }
 
@@ -50,7 +67,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: secondAnimation 1s ease 0s 1 normal forwards;
 
     .formSelect {
       width: 100%;
@@ -84,29 +100,5 @@
     border-radius: 3px;
     cursor: pointer;
     transition: all 300ms ease;
-  }
-}
-
-@keyframes secondAnimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes secondAnimation {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }

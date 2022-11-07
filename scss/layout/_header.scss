@@ -2,88 +2,69 @@ header {
   @include flex(row, space-between, center);
   padding: 20px 5%;
 
-  .menuButton {
-    display: none;
+  .navbar {
+    @include flex(row, space-between, center);
+    width: 100%;
 
-    i {
-      color: $secondaryColor;
-      font-size: 30px;
-      transition: all 0.3s ease 0s;
-    }
-
-    &.collapsed {
-      i {
-        color: $primaryColor;
+    .navbar-brand {
+      .logoImage {
+        width: 350px;
+        cursor: pointer;
       }
     }
-  }
 
-  li,
-  a,
-  button {
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-  }
+    .navbar-collapse {
+      &.show {
+        @include flex(row, flex-end, center);
+      }
+    }
 
-  .logoImage {
-    width: 350px;
-    cursor: pointer;
-  }
+    .navbar-nav {
+      @include flex(row, center, center);
 
-  .navLinks {
-    list-style: none;
-    margin-bottom: 0;
+      li {
+        display: inline-block;
+        padding: 0px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
 
-    li {
-      display: inline-block;
-      padding: 0px 20px;
+        a {
+          transition: all 0.3s ease 0s;
+          color: $primaryColor;
 
-      a {
-        transition: all 0.3s ease 0s;
-        color: $primaryColor;
+          &:hover {
+            color: $secondaryColor;
+            text-decoration: underline;
+          }
 
-        &:hover {
-          color: $secondaryColor;
-          text-decoration: underline;
+          &.active {
+            color: $secondaryColor;
+          }
         }
       }
-    }
-  }
 
-  .collabButton {
-    color: white;
-    padding: 9px 25px;
-    background-color: $secondaryColor;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
-    &:hover {
-      background-color: $primaryColor;
-    }
-  }
-}
-
-.collapseWrapper {
-  .collapseNav {
-    @include flex(column, center, flex-start);
-    background-color: $primaryColor;
-    padding-left: 0;
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    li {
-      padding: 0px 20px;
-      list-style-type: none;
-      a {
-        transition: all 0.3s ease 0s;
+      .collabButton {
+        font-size: 15px;
+        font-weight: bold;
         color: white;
-        text-decoration: none;
-        font-weight: 550;
+        padding: 9px 25px;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
         &:hover {
-          color: $secondaryColor;
+          background-color: $secondaryColor;
+        }
+
+        &.active {
+          background-color: $secondaryColor;
+
+          &:hover {
+            background-color: $primaryColor;
+          }
         }
       }
     }

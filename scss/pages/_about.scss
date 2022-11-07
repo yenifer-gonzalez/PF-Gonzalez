@@ -1,8 +1,24 @@
 .aboutSection {
   @include flex(column, _, _);
-  padding-top: 100px;
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-top: 70px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  .principalText {
+    @include flex(row, center, center);
+    font-style: italic;
+    margin-bottom: 70px;
+    color: $secondaryColor;
+
+    .aboutFirstTitle {
+      font-size: 35px;
+      margin-right: 150px;
+    }
+
+    .aboutSecondTitle {
+      font-size: 35px;
+    }
+  }
 
   .aboutInfo {
     @include flex();
@@ -17,11 +33,45 @@
     .aboutFirstText {
       margin-right: 0;
       margin-left: 40px;
+
+      h2 {
+        font-weight: 600;
+        color: $primaryColor;
+        font-size: 30px;
+        line-height: 1.5em;
+        margin-bottom: 3%;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
     }
 
     .aboutSecondText {
       margin-left: 0;
       margin-right: 40px;
+
+      h2 {
+        font-weight: 600;
+        color: $primaryColor;
+        font-size: 30px;
+        line-height: 1.5em;
+        margin-bottom: 0;
+      }
+
+      h3 {
+        font-size: 25px;
+        letter-spacing: 3px;
+        line-height: 1.7em;
+        margin-bottom: 30px;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 30px;
+      }
     }
   }
 }

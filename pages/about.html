@@ -9,12 +9,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/e0a558e459.js"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    ></script>
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,54 +22,66 @@
       rel="stylesheet"
     />
     <link rel="icon" href="../assets/favicon.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Sobre - Refugio Huellitas</title>
   </head>
 
   <body>
     <header>
-      <a href="../index.html"
-        ><img class="logoImage" src="../assets/Logo.png" alt="logo"
-      /></a>
-      <a
-        class="menuButton"
-        data-bs-toggle="collapse"
-        href="#collapseRef"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseRef"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </a>
-      <nav>
-        <ul class="navLinks">
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="#">SOBRE</a></li>
-          <li><a href="./adopt.html">ADOPCIONES</a></li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <a href="./collaborate.html"
-            ><button class="collabButton">COLABORAR</button></a
+      <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+          <a href="../index.html"
+            ><img class="logoImage" src="../assets/Logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </ul>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >SOBRE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./adopt.html"
+                  >ADOPCIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./collaborate.html"
+                  ><button class="collabButton">COLABORAR</button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="collapse collapseWrapper" id="collapseRef">
-      <nav>
-        <ul class="collapseNav">
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="#">SOBRE</a></li>
-          <li><a href="./adopt.html">ADOPCIONES</a></li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <li><a href="./collaborate.html">COLABORAR</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <section class="top aboutTop">
       <p class="textImage">
@@ -82,34 +94,68 @@
     <!-- ABOUT SECTION -->
 
     <section class="aboutSection">
-      <h2>#ADOPTANOCOMPRES</h2>
-      <h2>#SALVADOSVIDAS</h2>
-      <div class="aboutInfo">
-        <img class="imageAbout" src="../assets/images/one.jpg" alt="dog" />
-        <p class="aboutFirstText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur
-          gravida arcu ac tortor dignissim convallis aenean et tortor. Ac tortor
-          dignissim convallis aenean et tortor at risus. Pulvinar etiam non quam
-          lacus suspendisse faucibus interdum. Maecenas ultricies mi eget mauris
-          pharetra et. Vulputate dignissim suspendisse in est. Sit amet dictum
-          sit amet justo. Convallis aenean et tortor at. Mauris rhoncus aenean
-          vel elit scelerisque mauris. Massa eget egestas purus viverra accumsan
-          in nisl.
-        </p>
+      <div class="principalText">
+        <h1 class="aboutFirstTitle bold">#ADOPTANOCOMPRES</h1>
+        <h1 class="aboutSecondTitle bold">#SALVADOSVIDAS</h1>
       </div>
       <div class="aboutInfo">
-        <p class="aboutSecondText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur
-          gravida arcu ac tortor dignissim convallis aenean et tortor. Ac tortor
-          dignissim convallis aenean et tortor at risus. Pulvinar etiam non quam
-          lacus suspendisse faucibus interdum. Maecenas ultricies mi eget mauris
-          pharetra et. Vulputate dignissim suspendisse in est. Sit amet dictum
-          sit amet justo. Convallis aenean et tortor at. Mauris rhoncus aenean
-          vel elit scelerisque mauris. Massa eget egestas purus viverra accumsan
-          in nisl.
-        </p>
+        <img class="imageAbout" src="../assets/images/one.jpg" alt="dog" />
+        <div class="aboutFirstText">
+          <h2>Una organización enfocada en la bondad.</h2>
+          <p class="justifyText">
+            Comenzamos con poca algarabía y hasta con menos recursos: creamos un
+            santuario para los animales sin hogar y con necesidades especiales
+            desde los cimientos, abrimos caminos y construimos edificios con
+            nuestras propias manos. Estábamos creando un mundo mejor a través de
+            la bondad hacia los animales. Incluso en esos primeros días, cada
+            acto aislado de salvamento importaba, por pequeño o invisible que
+            fuera. Porque no estábamos construyendo solo un santuario. Estábamos
+            colocando los cimientos para cambiar como este país ve y se ocupa de
+            los animales sin hogar. En la actualidad, el Santuario sigue siendo
+            nuestro pilar y a lo largo de nuestro crecimiento, los socios de
+            nuestra red nacional y los centros de salvamento se han convertido
+            en plataformas para la innovación y la inspiración. Estamos llevando
+            tácticas tangibles para salvar vidas a albergues y grupos de rescate
+            en Uruguay, llegando a cada comunidad en el país. Pero incluso hoy
+            en día, se sigue tratando de simples actos de bondad y la creencia
+            de que cada animal merece una oportunidad. Al trabajar juntos,
+            estamos construyendo sobre una base de compasión e inclusión para
+            ayudar tanto a las mascotas como a las personas. Nos aseguramos de
+            que todos tengan el mismo acceso a mascotas amorosas y que toda
+            mascota adoptable tenga acceso a la comodidad de un hogar de
+            acogida, en lugar de una jaula en un albergue.
+          </p>
+        </div>
+      </div>
+      <div class="aboutInfo">
+        <div class="aboutSecondText">
+          <h2>Actuar por el bien de las mascotas.</h2>
+          <h3>Nuestra misión</h3>
+          <ul>
+            <li>
+              Promover el bienestar animal y la tenencia responsable de
+              mascotas.
+            </li>
+            <li>Encontrar hogares para mascotas no deseadas.</li>
+            <li>
+              Brindar atención humana a todos los animales bajo nuestro cuidado.
+            </li>
+            <li>
+              Educar a la comunidad sobre los problemas de los animales no
+              deseados, abandonados y maltratados.
+            </li>
+            <li>
+              Ayudar a las personas a mantener a sus animales a través de la
+              esterilización y castración.
+            </li>
+            <li>Cuidado veterinario y otra ayuda según sea necesario.</li>
+          </ul>
+          <p>
+            Para ello, trabajamos con la comunidad, los refugios del área y los
+            grupos de rescate locales mediante el desarrollo de una red de
+            voluntarios para crear un mundo mejor para los animales sin hogar.
+          </p>
+        </div>
         <img class="imageAbout" src="../assets/images/two.jpg" alt="minipig" />
       </div>
     </section>
@@ -127,26 +173,26 @@
         <div class="socialContainer">
           <h3 class="socialText">Siguenos en nuestras redes</h3>
           <div class="socialButtons">
-            <div class="icon facebook">
-              <span><i class="fa-brands fa-facebook-f"></i></span>
-            </div>
-            <div class="icon twitter">
-              <span><i class="fa-brands fa-twitter"></i></span>
-            </div>
-            <div class="icon instagram">
-              <span><i class="fa-brands fa-instagram"></i></span>
-            </div>
-            <div class="icon">
-              <span><i class="fa-brands fa-youtube"></i></span>
-            </div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="../assets/icons/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="../assets/icons/twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="../assets/icons/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="../assets/icons/youtube.svg" alt="youtube"
+            /></a>
           </div>
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
 </html>

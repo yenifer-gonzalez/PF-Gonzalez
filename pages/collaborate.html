@@ -9,12 +9,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/e0a558e459.js"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    ></script>
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,52 +22,62 @@
       rel="stylesheet"
     />
     <link rel="icon" href="../assets/favicon.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Colaborar - Refugio Huellitas</title>
   </head>
 
   <body>
     <header>
-      <a href="../index.html"
-        ><img class="logoImage" src="../assets/Logo.png" alt="logo"
-      /></a>
-      <a
-        class="menuButton"
-        data-bs-toggle="collapse"
-        href="#collapseRef"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseRef"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </a>
-      <nav>
-        <ul class="navLinks">
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./about.html">SOBRE</a></li>
-          <li><a href="./adopt.html">ADOPCIONES</a></li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <a href="#"><button class="collabButton">COLABORAR</button></a>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+          <a href="../index.html"
+            ><img class="logoImage" src="../assets/Logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./about.html"
+                  >SOBRE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./adopt.html"
+                  >ADOPCIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><button class="collabButton active">COLABORAR</button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="collapse collapseWrapper" id="collapseRef">
-      <nav>
-        <ul class="collapseNav">
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./about.html">SOBRE</a></li>
-          <li><a href="./adopt.html">ADOPCIONES</a></li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <li><a href="#">COLABORAR</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <section class="top collabTop">
       <p class="textImage">
@@ -87,10 +97,11 @@
           </div>
           <div class="cardBack">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              accusantium vero excepturi amet officiis nobis inventore
-              recusandae voluptatem reprehenderit voluptas aperiam rem, error
-              repellat ipsam fugiat, blanditiis laboriosam natus id.
+              El factor económico es el mayor limitante para ampliar las
+              acciones y poder llegar a atender a un mayor número de animales,
+              por lo que la ayuda de nuestros socios hace posible que podamos
+              seguir protegiendo y defendiendo a los animales más
+              desfavorecidos.
             </p>
           </div>
         </div>
@@ -104,10 +115,11 @@
           </div>
           <div class="cardBack">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              accusantium vero excepturi amet officiis nobis inventore
-              recusandae voluptatem reprehenderit voluptas aperiam rem, error
-              repellat ipsam fugiat, blanditiis laboriosam natus id.
+              Los padrinos tienen la opción de subir al Centro de Adopción los
+              sábados. Apadrinar es una maravillosa y gratificante experiencia,
+              ya que el padrino puede comprobar cómo gracias a su cariño y al
+              tiempo que ha dedicado de forma presencial, mejora la calidad de
+              vida y el bienestar del animal apadrinado.
             </p>
           </div>
         </div>
@@ -121,10 +133,12 @@
           </div>
           <div class="cardBack">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              accusantium vero excepturi amet officiis nobis inventore
-              recusandae voluptatem reprehenderit voluptas aperiam rem, error
-              repellat ipsam fugiat, blanditiis laboriosam natus id.
+              Algunos de los animales que llegan al Refugio Huellitas requieren
+              unos cuidados especiales debido a su edad o a su estado de salud.
+              Se necesitan casas de acogida temporales para estos animales,
+              mientras se les atiende sanitariamente y se le busca un hogar
+              definitivo para ellos. Desde Refugio Huellitas se cubren todas sus
+              necesidades.
             </p>
           </div>
         </div>
@@ -138,10 +152,9 @@
           </div>
           <div class="cardBack">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              accusantium vero excepturi amet officiis nobis inventore
-              recusandae voluptatem reprehenderit voluptas aperiam rem, error
-              repellat ipsam fugiat, blanditiis laboriosam natus id.
+              Si estás decidido a comprometerte de manera seria y responsable
+              para lograr que cientos de animales reciban la ayuda que
+              necesitan; ¡hazte voluntario!
             </p>
           </div>
         </div>
@@ -155,10 +168,13 @@
           </div>
           <div class="cardBack">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              accusantium vero excepturi amet officiis nobis inventore
-              recusandae voluptatem reprehenderit voluptas aperiam rem, error
-              repellat ipsam fugiat, blanditiis laboriosam natus id.
+              Gracias a tu generosidad, la donación recibida se destinará
+              íntegramente a mejorar la calidad de vida de los animales que
+              viven de forma temporal en nuestro Centro de Adopción, a fomentar
+              la tenencia responsable y el correcto cuidado de los animales de
+              compañía, a evitar y denunciar su abandono… es decir, a seguir
+              trabajando por y para los animales abandonados y la problemática
+              que existe en Uruguay.
             </p>
           </div>
         </div>
@@ -171,12 +187,7 @@
             <button>MÁS INFO.</button>
           </div>
           <div class="cardBack">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              accusantium vero excepturi amet officiis nobis inventore
-              recusandae voluptatem reprehenderit voluptas aperiam rem, error
-              repellat ipsam fugiat, blanditiis laboriosam natus id.
-            </p>
+            <p>Ayúdanos a concienciar y sensibilizar.</p>
           </div>
         </div>
       </div>
@@ -195,18 +206,18 @@
         <div class="socialContainer">
           <h3 class="socialText">Siguenos en nuestras redes</h3>
           <div class="socialButtons">
-            <div class="icon facebook">
-              <span><i class="fa-brands fa-facebook-f"></i></span>
-            </div>
-            <div class="icon twitter">
-              <span><i class="fa-brands fa-twitter"></i></span>
-            </div>
-            <div class="icon instagram">
-              <span><i class="fa-brands fa-instagram"></i></span>
-            </div>
-            <div class="icon">
-              <span><i class="fa-brands fa-youtube"></i></span>
-            </div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="../assets/icons/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="../assets/icons/twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="../assets/icons/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="../assets/icons/youtube.svg" alt="youtube"
+            /></a>
           </div>
         </div>
       </div>
