@@ -5,93 +5,93 @@
   padding-top: 100px;
   padding-left: 15%;
   padding-right: 15%;
-}
 
-.cardContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
+  .cardContainer {
+    @include flex(_, center, center);
+    width: 100%;
+    height: 100%;
 
-.card {
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 320px;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-}
+    .card {
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 320px;
+      border-radius: 10px;
+      transform-style: preserve-3d;
+      transition: all 0.8s ease;
 
-.card:hover {
-  transform: rotateY(180deg);
-}
+      &:hover {
+        transform: rotateY(180deg);
+      }
 
-.cardFront {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+      .cardFront {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.cardBack {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #fafafa;
-  color: #333;
-  text-align: center;
-  transform: rotateY(180deg);
-}
+        h1 {
+          padding: 30px;
+          font-weight: bold;
+          font-size: 24px;
+          text-align: center;
+          color: white;
+          text-shadow: 1px 1px 2px rgba(52, 78, 65, 0.38);
+        }
 
-.cardFront h1 {
-  padding: 30px;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
+        &.cardOne {
+          background: url(../assets/images/haztesocio.jpg);
+        }
 
-.cardBack p {
-  padding: 30px;
-  font-weight: normal;
-  font-size: 12px;
-  text-align: center;
-}
+        &.cardTwo {
+          background: url(../assets/images/apadrina.jpg);
+        }
 
-.cardOne {
-  background: url(/assets/images/);
-}
+        &.cardThree {
+          background: url(../assets/images/canguro.jpg);
+        }
 
-.cardTwo {
-  background: url(/assets/images/);
-}
+        &.cardFour {
+          background: url(../assets/images/voluntariado.jpg);
+        }
 
-.cardThree {
-  background: url(/assets/images/);
-}
+        &.cardFive {
+          background: url(../assets/images/donativo.jpg);
+        }
 
-.cardFour {
-  background: url(/assets/images/);
-}
+        &.cardSix {
+          background: url(../assets/images/difunde.jpg);
+        }
+      }
 
-.cardFive {
-  background: url(/assets/images/);
-}
+      .cardBack {
+        @include flex(_, center, center);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        background: #fafafa;
+        color: #333;
+        text-align: center;
+        transform: rotateY(180deg);
 
-.cardSix {
-  background: url(/assets/images/);
+        p {
+          padding: 30px;
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

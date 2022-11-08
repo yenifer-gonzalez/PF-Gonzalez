@@ -5,6 +5,19 @@
       font-size: 140%;
     }
   }
+
+  /* Adopt */
+  .adoptWrapper {
+    width: 80%;
+  }
+
+  /* Contact */
+  .sectionWrapper {
+    .containerForm {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 80px;
+    }
+  }
 }
 
 @media screen and (max-width: 1225px) {
@@ -22,6 +35,11 @@
     .textImage {
       font-size: 120%;
     }
+  }
+
+  /* Adopt */
+  .adoptWrapper {
+    width: 90%;
   }
 }
 
@@ -43,6 +61,16 @@
       padding-top: 100px;
       width: 100%;
     }
+  }
+
+  /* Adopt */
+  .adoptWrapper {
+    width: 100%;
+  }
+
+  /* Collaborate */
+  .cardWrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -81,6 +109,12 @@
     }
   }
 
+  /* Adopt */
+  .adoptWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+
   /* Contact */
   .containerForm {
     grid-template-columns: 1fr;
@@ -89,9 +123,6 @@
     .sectionForm {
       padding-right: 15%;
       padding-left: 15%;
-    }
-    .socialsForm {
-      width: 25%;
     }
   }
 
@@ -164,6 +195,11 @@
       }
     }
 
+    /* Collaborate */
+    .cardWrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     /* Footer */
     footer {
       .mainContent {
@@ -233,13 +269,21 @@
       }
     }
 
+    .aboutSection {
+      .principalText {
+        .aboutFirstTitle {
+          font-size: 28px;
+        }
+        .aboutSecondTitle {
+          font-size: 28px;
+        }
+      }
+    }
+
     /* Contact */
     .infoForm {
       padding-left: 15%;
       padding-right: 15%;
-      .socialsForm {
-        width: 50%;
-      }
     }
 
     /* Footer */
