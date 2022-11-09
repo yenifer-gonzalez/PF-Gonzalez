@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="../assets/favicon.png" />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Contacto - Refugio Huellitas</title>
@@ -83,12 +84,12 @@
     </header>
 
     <section class="top contactTop">
-      <p class="textImage"></p>
+      <p class="textImage">¡Conéctacte con nosotros!</p>
     </section>
 
     <!-- Informacion de bienvenida -->
     <section class="sectionWrapper">
-      <div class="containerForm">
+      <div class="containerForm" data-aos="fade-right" data-aos-duration="1500">
         <div class="infoForm">
           <h2>REFUGIO ANIMAL</h2>
           <p>(Dirección)</p>
@@ -129,7 +130,7 @@
           />
         </form>
       </div>
-      <div class="boxText">
+      <div class="boxText" data-aos="fade-left" data-aos-duration="1500">
         <p class="aboutEndText">
           Refugio Huellitas está integrado exclusivamente por voluntarios. Somos
           personas como cualquier otra, con nuestros compromisos diarios,
@@ -175,5 +176,9 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

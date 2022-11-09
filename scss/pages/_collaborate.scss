@@ -95,3 +95,24 @@
     }
   }
 }
+
+.secondWrapper {
+  margin-left: 15%;
+  margin-right: 15%;
+
+  hr {
+    margin-top: 70px;
+    border: none;
+    height: 5px;
+    background: $tertiaryColor;
+  }
+
+  p {
+    margin-top: 50px;
+    color: $primaryColor;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

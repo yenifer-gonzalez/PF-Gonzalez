@@ -166,7 +166,8 @@ header {
     padding-right: 10%;
     margin-bottom: 150px;
     color: #f2f4f3;
-    text-align: center; }
+    text-align: center;
+    font-weight: 500; }
   .top.homeTop {
     background: url(../assets/background/home.webp);
     background-repeat: no-repeat; }
@@ -188,7 +189,8 @@ header {
   display: flex;
   padding-top: 100px;
   padding-left: 15%;
-  padding-right: 15%; }
+  padding-right: 15%;
+  overflow: hidden; }
   .infoWrapper p {
     margin-top: 0;
     margin-bottom: 0;
@@ -259,7 +261,8 @@ header {
   align-items: stretch;
   margin-top: 70px;
   margin-left: 15%;
-  margin-right: 15%; }
+  margin-right: 15%;
+  overflow: hidden; }
   .aboutSection .principalText {
     display: flex;
     flex-direction: row;
@@ -331,7 +334,8 @@ header {
   margin-top: 100px;
   margin-left: 15%;
   margin-right: 15%;
-  padding: 1%; }
+  padding: 1%;
+  overflow: hidden; }
   .principalTextAdoption h1 {
     color: #344e41;
     font-size: 25px;
@@ -456,13 +460,30 @@ header {
           font-weight: normal;
           font-size: 12px; }
 
+.secondWrapper {
+  margin-left: 15%;
+  margin-right: 15%; }
+  .secondWrapper hr {
+    margin-top: 70px;
+    border: none;
+    height: 5px;
+    background: #dad7cd; }
+  .secondWrapper p {
+    margin-top: 50px;
+    color: #344e41;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+
 .sectionWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 15%;
-  padding-right: 15%; }
+  padding-right: 15%;
+  overflow: hidden; }
   .sectionWrapper .boxText {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding: 3%; }
@@ -603,23 +624,6 @@ header {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 1060px) {
-  /* Esto funciona para que las animaciones no aparezcan en el responsive */
-  .aos-animate {
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important; }
   /* About */
   .aboutSection .aboutInfo {
     display: flex;
@@ -764,9 +768,12 @@ header {
   .aboutSection .principalText .aboutSecondTitle {
     font-size: 28px; }
   /* Contact */
-  .infoForm {
+  .sectionWrapper .containerForm .infoForm {
     padding-left: 15%;
     padding-right: 15%; }
+    .sectionWrapper .containerForm .infoForm .socialsForm a {
+      height: 40px;
+      width: 40px; }
   /* Footer */
   footer .mainContent .socialContainer .socialText {
     font-size: 15px; }

@@ -21,8 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="../assets/favicon.png" />
-
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Sobre - Refugio Huellitas</title>
   </head>
@@ -94,11 +94,11 @@
     <!-- ABOUT SECTION -->
 
     <section class="aboutSection">
-      <div class="principalText">
+      <div class="principalText" data-aos="fade" data-aos-duration="1000">
         <h1 class="aboutFirstTitle bold">#ADOPTANOCOMPRES</h1>
         <h1 class="aboutSecondTitle bold">#SALVADOSVIDAS</h1>
       </div>
-      <div class="aboutInfo">
+      <div class="aboutInfo" data-aos="slide-left" data-aos-duration="1500">
         <img class="imageAbout" src="../assets/images/one.jpg" alt="dog" />
         <div class="aboutFirstText">
           <h2>Una organización enfocada en la bondad.</h2>
@@ -127,7 +127,7 @@
           </p>
         </div>
       </div>
-      <div class="aboutInfo">
+      <div class="aboutInfo" data-aos="slide-right" data-aos-duration="1500">
         <div class="aboutSecondText">
           <h2>Actuar por el bien de las mascotas.</h2>
           <h3>Nuestra misión</h3>
@@ -195,4 +195,8 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
