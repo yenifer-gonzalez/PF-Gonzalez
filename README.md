@@ -49,4 +49,4 @@ _Conocimientos adquiridos y posteriormente aplicados:_
 - Se realizaron en total ocho páginas, contando las del navbar + tres interactivas para darle dinamismo al sitio (dentro de las adopciones para cada una de las mascotas).
 - Se utilizó un cursor distinto tanto default como pointer.
 
-Link a GitHub Pages para ver la página en vivo 👉🏻 [Refugio Huellitas](https://yenifer-gonzalez.github.io/PreEntrega3-Gonzalez/).
+Link a GitHub Pages para ver la página en vivo 👉🏻 [Refugio Huellitas](https://yenifer-gonzalez.github.io/PF-Gonzalez/).
