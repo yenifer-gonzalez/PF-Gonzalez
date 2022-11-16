@@ -1,10 +1,17 @@
 /* UTILITIES & BASE */
 * {
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  cursor: url(../assets/cursor/default.png), auto !important; }
   *::selection {
     background-color: #344e41;
     color: #dad7cd; }
+  * a {
+    cursor: url(../assets/cursor/pointer.png), pointer !important; }
+    * a img {
+      cursor: url(../assets/cursor/pointer.png), pointer !important; }
+  * button {
+    cursor: url(../assets/cursor/pointer.png), pointer !important; }
 
 body {
   background-color: #f2f4f3;
@@ -109,8 +116,7 @@ header {
     align-items: center;
     width: 100%; }
     header .navbar .navbar-brand .logoImage {
-      width: 350px;
-      cursor: pointer; }
+      width: 350px; }
     header .navbar .navbar-collapse.show {
       display: flex;
       flex-direction: row;
@@ -143,7 +149,6 @@ header {
         background-color: #344e41;
         border: none;
         border-radius: 50px;
-        cursor: pointer;
         transition: all 0.3s ease 0s; }
         header .navbar .navbar-nav .collabButton:hover {
           background-color: #a3b18a; }
@@ -182,6 +187,9 @@ header {
     background-repeat: no-repeat; }
   .top.contactTop {
     background: url(../assets/background/contact.webp);
+    background-repeat: no-repeat; }
+  .top.dogAdoptTop {
+    background: url(../assets/background/dogs.webp);
     background-repeat: no-repeat; }
 
 /* PAGES */
@@ -485,10 +493,11 @@ header {
   padding-right: 15%;
   overflow: hidden; }
   .sectionWrapper .boxText {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #344e41;
     padding: 3%; }
     .sectionWrapper .boxText .aboutEndText {
-      font-size: 15px;
+      color: white;
+      font-size: 18px;
       font-weight: bold; }
   .sectionWrapper .containerForm {
     width: 100%;
@@ -573,6 +582,39 @@ header {
         cursor: pointer;
         transition: all 300ms ease; }
 
+.dogsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 100px; }
+  .dogsWrapper .dogSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #344e41;
+    border-radius: 10px;
+    overflow: hidden; }
+    .dogsWrapper .dogSection img {
+      width: 100%;
+      object-fit: cover;
+      border-bottom: 2px solid #344e41; }
+    .dogsWrapper .dogSection h1 {
+      width: 100%;
+      padding-left: 10px;
+      text-align: left;
+      color: #344e41; }
+    .dogsWrapper .dogSection ul {
+      padding-left: 10px;
+      width: 100%; }
+      .dogsWrapper .dogSection ul li {
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 500; }
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1480px) {
   /* Main image */
@@ -652,6 +694,9 @@ header {
   .adoptWrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px; }
+  .dogsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr); }
   /* Contact */
   .containerForm {
     grid-template-columns: 1fr;
@@ -726,6 +771,10 @@ header {
   /* Collaborate */
   .cardWrapper {
     grid-template-columns: repeat(1, 1fr); }
+  /* Adopt */
+  .dogsWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 0.7fr); }
   /* Footer */
   footer .mainContent {
     display: flex;

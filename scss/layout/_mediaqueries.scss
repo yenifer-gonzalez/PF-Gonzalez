@@ -116,6 +116,10 @@
     gap: 50px;
   }
 
+  .dogsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+  }
   /* Contact */
 
   .containerForm {
@@ -207,6 +211,12 @@
     /* Collaborate */
     .cardWrapper {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Adopt */
+    .dogsWrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 0.7fr);
     }
 
     /* Footer */

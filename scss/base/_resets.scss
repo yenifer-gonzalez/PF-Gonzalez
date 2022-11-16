@@ -6,6 +6,16 @@
     background-color: $primaryColor;
     color: $tertiaryColor;
   }
+  cursor: url(../assets/cursor/default.png), auto !important;
+  a {
+    cursor: url(../assets/cursor/pointer.png), pointer !important;
+    img {
+      cursor: url(../assets/cursor/pointer.png), pointer !important;
+    }
+  }
+  button {
+    cursor: url(../assets/cursor/pointer.png), pointer !important;
+  }
 }
 
 body {

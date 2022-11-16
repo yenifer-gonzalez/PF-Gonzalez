@@ -9,7 +9,6 @@ header {
     .navbar-brand {
       .logoImage {
         width: 350px;
-        cursor: pointer;
       }
     }
 
@@ -52,7 +51,6 @@ header {
         background-color: $primaryColor;
         border: none;
         border-radius: 50px;
-        cursor: pointer;
         transition: all 0.3s ease 0s;
 
         &:hover {
