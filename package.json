@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yenifer-gonzalez/PreEntrega3-Gonzalez.git"
+    "url": "git+https://github.com/yenifer-gonzalez/PF+Gonzalez.git"
   },
   "author": "Yenifer Gonzalez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yenifer-gonzalez/PreEntrega3-Gonzalez/issues"
+    "url": "https://github.com/yenifer-gonzalez/PF+Gonzalez/issues"
   },
-  "homepage": "https://github.com/yenifer-gonzalez/PreEntrega3-Gonzalez#readme",
+  "homepage": "https://github.com/yenifer-gonzalez/PF+Gonzalez#readme",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"

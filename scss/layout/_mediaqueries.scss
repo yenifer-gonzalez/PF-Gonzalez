@@ -5,9 +5,7 @@
       font-size: 140%;
     }
   }
-
   /* About */
-
   .aboutSection {
     .principalText {
       .aboutFirstTitle {
@@ -15,12 +13,15 @@
       }
     }
   }
-
   /* Adopt */
   .adoptWrapper {
     width: 80%;
+    .petSection {
+      a {
+        text-align: center;
+      }
+    }
   }
-
   /* Contact */
   .sectionWrapper {
     .containerForm {
@@ -34,7 +35,6 @@
   header {
     .navbar {
       @include flex(column, _, center);
-
       .navbar-brand {
         margin-right: 0;
       }
@@ -46,9 +46,7 @@
       font-size: 120%;
     }
   }
-
   /* About */
-
   .aboutSection {
     .principalText {
       .aboutFirstTitle {
@@ -60,7 +58,6 @@
       }
     }
   }
-
   /* Adopt */
   .adoptWrapper {
     width: 90%;
@@ -71,27 +68,22 @@
   /* Home */
   .infoWrapper {
     @include flex(column);
-
     .infoLeft {
       width: 100%;
       padding: 0;
-
       .infoButton {
         margin-top: 40px;
       }
     }
-
     .infoRight {
       padding-top: 100px;
       width: 100%;
     }
   }
-
   /* Adopt */
   .adoptWrapper {
     width: 100%;
   }
-
   /* Collaborate */
   .cardWrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -104,55 +96,55 @@
     .aboutInfo {
       @include flex(column, center, center);
       padding-bottom: 50px;
-
       .imageAbout {
         height: 200px;
         width: 100%;
       }
-
       .imageAbout:nth-child(2) {
         display: none;
       }
-
       .aboutFirstText {
         margin-left: 0;
       }
-
       .aboutSecondText {
         margin-right: 0;
       }
     }
-
     .principalText {
       @include flex(column, center, center);
-
       .aboutFirstTitle {
         margin-right: 0;
         margin-bottom: 0;
       }
     }
   }
-
   /* Adopt */
-
   .adoptWrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
   }
-
   .adoptionAnimalsWrapper {
     display: grid;
     grid-template-columns: repeat(2, 0.4fr);
+    padding-top: 100px;
+  }
+  .arrowAdopt {
+    display: none;
   }
   /* Contact */
-
   .containerForm {
     grid-template-columns: 1fr;
     grid-gap: 100px;
-
     .sectionForm {
-      padding-right: 15%;
-      padding-left: 15%;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+  .sectionWrapper {
+    .boxText {
+      .aboutEndText {
+        text-align: center;
+      }
     }
   }
 
@@ -160,21 +152,17 @@
     header {
       .navbar {
         @include flex(row, space-between, center);
-
         .navbar-brand {
           @include flex(row, space-between, center);
           width: 100%;
           margin-right: 0;
         }
-
         .navbar-collapse {
           &.show {
             @include flex(row, flex-start, center);
           }
-
           .navbar-nav {
             @include flex(column, flex-start, flex-start);
-
             .collabButton {
               border: none;
               background: none;
@@ -183,12 +171,10 @@
               padding: 0;
               transition: all 0.3s ease 0s;
               color: $primaryColor;
-
               &:hover {
                 color: $secondaryColor;
                 text-decoration: underline;
               }
-
               &.active {
                 color: $secondaryColor;
                 text-decoration: underline;
@@ -211,7 +197,6 @@
         text-align: center;
       }
     }
-
     /* Header */
     header {
       @include flex(row, space-between, center);
@@ -225,30 +210,26 @@
         width: 300px;
       }
     }
-
     /* About */
     .aboutSection {
       margin-left: 6%;
       margin-right: 6%;
     }
-
     /* Collaborate */
     .cardWrapper {
       grid-template-columns: repeat(1, 1fr);
     }
-
     /* Adopt */
     .adoptionAnimalsWrapper {
       display: grid;
       grid-template-columns: repeat(1, 0.7fr);
     }
-
     /* Footer */
     footer {
       .mainContent {
         @include flex(column);
         .socialContainer {
-          padding-top: 100px;
+          padding-top: 50px;
         }
       }
     }
@@ -271,11 +252,9 @@
         }
       }
     }
-
     .infoWrapper {
       padding-left: 10%;
       padding-right: 10%;
-
       .infoLeft {
         width: 100%;
         padding: 0;
@@ -287,11 +266,9 @@
           text-align: center;
         }
       }
-
       .infoRight {
         padding-top: 150px;
         width: 100%;
-
         .infoContainer {
           p {
             font-size: 13px;
@@ -302,7 +279,6 @@
             text-align: left;
           }
         }
-
         .backgroundWelcome {
           margin-right: 15px;
           min-width: 70px;
@@ -311,7 +287,7 @@
         }
       }
     }
-
+    /* About */
     .aboutSection {
       .principalText {
         .aboutFirstTitle {
@@ -322,15 +298,31 @@
         }
       }
     }
-
+    /* Adopt */
+    .adoptWrapper {
+      margin-top: 50px;
+    }
+    .principalTextAdoption {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .accordion {
+      padding: 60px 0 0 0;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .findText {
+      padding: 60px 20px 0px 20px;
+      p {
+        padding-top: 20px;
+      }
+    }
     /* Contact */
-
     .sectionWrapper {
       .containerForm {
         .infoForm {
           padding-left: 15%;
           padding-right: 15%;
-
           .socialsForm {
             a {
               height: 40px;
@@ -340,9 +332,7 @@
         }
       }
     }
-
     /* Footer */
-
     footer {
       .mainContent {
         .socialContainer {

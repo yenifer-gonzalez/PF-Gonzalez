@@ -60,6 +60,10 @@ footer {
       footer .mainContent .textSection .footerText {
         font-size: 15px;
         color: white; }
+        footer .mainContent .textSection .footerText a {
+          color: #a3b18a; }
+          footer .mainContent .textSection .footerText a:hover {
+            text-decoration: underline; }
     footer .mainContent .socialContainer {
       display: flex;
       flex-direction: column;
@@ -355,8 +359,7 @@ header {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(52, 78, 65, 0.38); }
+    text-transform: uppercase; }
   .principalTextAdoption h2 {
     font-size: 20px;
     color: gray;
@@ -385,7 +388,8 @@ header {
       border-radius: 50%;
       padding-bottom: 25px; }
     .adoptWrapper .petSection a {
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: center; }
       .adoptWrapper .petSection a h3 {
         box-shadow: inset 0 0 0 0 #344e41;
         color: #344e41;
@@ -396,6 +400,12 @@ header {
         .adoptWrapper .petSection a h3:hover {
           box-shadow: inset 420px 0 0 0 #344e41;
           color: white; }
+
+.findText {
+  padding-top: 50px;
+  text-align: center; }
+  .findText h1 {
+    color: #344e41; }
 
 .cardWrapper {
   display: grid;
@@ -647,7 +657,9 @@ header {
     .arrowAdopt .arrowLeft p, .arrowAdopt .arrowRight p {
       padding-left: 10px;
       margin-bottom: 0;
-      color: #344e41; }
+      color: #344e41;
+      text-transform: uppercase;
+      font-weight: 600; }
   .arrowAdopt .arrowRight p {
     padding-right: 10px; }
 
@@ -665,6 +677,8 @@ a {
   /* Adopt */
   .adoptWrapper {
     width: 80%; }
+    .adoptWrapper .petSection a {
+      text-align: center; }
   /* Contact */
   .sectionWrapper .containerForm {
     grid-template-columns: repeat(1, 1fr);
@@ -744,14 +758,19 @@ a {
     gap: 50px; }
   .adoptionAnimalsWrapper {
     display: grid;
-    grid-template-columns: repeat(2, 0.4fr); }
+    grid-template-columns: repeat(2, 0.4fr);
+    padding-top: 100px; }
+  .arrowAdopt {
+    display: none; }
   /* Contact */
   .containerForm {
     grid-template-columns: 1fr;
     grid-gap: 100px; }
     .containerForm .sectionForm {
-      padding-right: 15%;
-      padding-left: 15%; } }
+      padding-right: 5%;
+      padding-left: 5%; }
+  .sectionWrapper .boxText .aboutEndText {
+    text-align: center; } }
 
 @media screen and (max-width: 1060px) and (max-width: 991px) {
   header .navbar {
@@ -830,7 +849,7 @@ a {
     justify-content: flex-start;
     align-items: stretch; }
     footer .mainContent .socialContainer {
-      padding-top: 100px; } }
+      padding-top: 50px; } }
 
 @media screen and (max-width: 1060px) and (max-width: 445px) {
   /* Main image */
@@ -864,10 +883,25 @@ a {
         min-width: 70px;
         height: 70px;
         border-radius: 50%; }
+  /* About */
   .aboutSection .principalText .aboutFirstTitle {
     font-size: 28px; }
   .aboutSection .principalText .aboutSecondTitle {
     font-size: 28px; }
+  /* Adopt */
+  .adoptWrapper {
+    margin-top: 50px; }
+  .principalTextAdoption {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .accordion {
+    padding: 60px 0 0 0;
+    margin-left: 10%;
+    margin-right: 10%; }
+  .findText {
+    padding: 60px 20px 0px 20px; }
+    .findText p {
+      padding-top: 20px; }
   /* Contact */
   .sectionWrapper .containerForm .infoForm {
     padding-left: 15%;
