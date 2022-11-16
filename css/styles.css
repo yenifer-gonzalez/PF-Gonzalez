@@ -191,6 +191,12 @@ header {
   .top.dogAdoptTop {
     background: url(../assets/background/dogs.webp);
     background-repeat: no-repeat; }
+  .top.catAdoptTop {
+    background: url(../assets/background/cats.webp);
+    background-repeat: no-repeat; }
+  .top.othersAdoptTop {
+    background: url(../assets/background/others.webp);
+    background-repeat: no-repeat; }
 
 /* PAGES */
 .infoWrapper {
@@ -582,15 +588,14 @@ header {
         cursor: pointer;
         transition: all 300ms ease; }
 
-.dogsWrapper {
+.adoptionAnimalsWrapper {
   display: grid;
   grid-template-columns: repeat(3, 0.3fr);
   gap: 50px;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding-top: 100px; }
-  .dogsWrapper .dogSection {
+  width: 100%; }
+  .adoptionAnimalsWrapper .adoptionAnimalsSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -598,28 +603,65 @@ header {
     border: 2px solid #344e41;
     border-radius: 10px;
     overflow: hidden; }
-    .dogsWrapper .dogSection img {
+    .adoptionAnimalsWrapper .adoptionAnimalsSection img {
       width: 100%;
       object-fit: cover;
+      filter: grayscale(1);
+      transition: all 0.5s ease;
       border-bottom: 2px solid #344e41; }
-    .dogsWrapper .dogSection h1 {
+      .adoptionAnimalsWrapper .adoptionAnimalsSection img:hover {
+        filter: none; }
+    .adoptionAnimalsWrapper .adoptionAnimalsSection h1 {
       width: 100%;
+      padding-top: 10px;
       padding-left: 10px;
       text-align: left;
       color: #344e41; }
-    .dogsWrapper .dogSection ul {
+    .adoptionAnimalsWrapper .adoptionAnimalsSection ul {
       padding-left: 10px;
       width: 100%; }
-      .dogsWrapper .dogSection ul li {
+      .adoptionAnimalsWrapper .adoptionAnimalsSection ul li {
         list-style: none;
         text-transform: uppercase;
         font-weight: 500; }
+
+.arrowAdopt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 90px;
+  padding-left: 5%;
+  padding-bottom: 10px;
+  padding-right: 5%; }
+  .arrowAdopt .arrowLeft, .arrowAdopt .arrowRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    .arrowAdopt .arrowLeft img, .arrowAdopt .arrowRight img {
+      width: 30px;
+      filter: invert(27%) sepia(14%) saturate(695%) hue-rotate(97deg) brightness(101%) contrast(98%); }
+      .arrowAdopt .arrowLeft img:hover, .arrowAdopt .arrowRight img:hover {
+        filter: invert(74%) sepia(13%) saturate(575%) hue-rotate(40deg) brightness(93%) contrast(85%); }
+    .arrowAdopt .arrowLeft p, .arrowAdopt .arrowRight p {
+      padding-left: 10px;
+      margin-bottom: 0;
+      color: #344e41; }
+  .arrowAdopt .arrowRight p {
+    padding-right: 10px; }
+
+a {
+  text-decoration: none; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1480px) {
   /* Main image */
   .top .textImage {
     font-size: 140%; }
+  /* About */
+  .aboutSection .principalText .aboutFirstTitle {
+    margin-right: 100px; }
   /* Adopt */
   .adoptWrapper {
     width: 80%; }
@@ -639,6 +681,12 @@ header {
   /* Main image */
   .top .textImage {
     font-size: 120%; }
+  /* About */
+  .aboutSection .principalText .aboutFirstTitle {
+    font-size: 30px;
+    margin-right: 80px; }
+  .aboutSection .principalText .aboutSecondTitle {
+    font-size: 30px; }
   /* Adopt */
   .adoptWrapper {
     width: 90%; } }
@@ -694,7 +742,7 @@ header {
   .adoptWrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px; }
-  .dogsWrapper {
+  .adoptionAnimalsWrapper {
     display: grid;
     grid-template-columns: repeat(2, 0.4fr); }
   /* Contact */
@@ -772,7 +820,7 @@ header {
   .cardWrapper {
     grid-template-columns: repeat(1, 1fr); }
   /* Adopt */
-  .dogsWrapper {
+  .adoptionAnimalsWrapper {
     display: grid;
     grid-template-columns: repeat(1, 0.7fr); }
   /* Footer */

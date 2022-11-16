@@ -6,6 +6,16 @@
     }
   }
 
+  /* About */
+
+  .aboutSection {
+    .principalText {
+      .aboutFirstTitle {
+        margin-right: 100px;
+      }
+    }
+  }
+
   /* Adopt */
   .adoptWrapper {
     width: 80%;
@@ -34,6 +44,20 @@
   .top {
     .textImage {
       font-size: 120%;
+    }
+  }
+
+  /* About */
+
+  .aboutSection {
+    .principalText {
+      .aboutFirstTitle {
+        font-size: 30px;
+        margin-right: 80px;
+      }
+      .aboutSecondTitle {
+        font-size: 30px;
+      }
     }
   }
 
@@ -116,7 +140,7 @@
     gap: 50px;
   }
 
-  .dogsWrapper {
+  .adoptionAnimalsWrapper {
     display: grid;
     grid-template-columns: repeat(2, 0.4fr);
   }
@@ -214,7 +238,7 @@
     }
 
     /* Adopt */
-    .dogsWrapper {
+    .adoptionAnimalsWrapper {
       display: grid;
       grid-template-columns: repeat(1, 0.7fr);
     }

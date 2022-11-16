@@ -43,4 +43,14 @@
     background: url(../assets/background/dogs.webp);
     background-repeat: no-repeat;
   }
+
+  &.catAdoptTop {
+    background: url(../assets/background/cats.webp);
+    background-repeat: no-repeat;
+  }
+
+  &.othersAdoptTop {
+    background: url(../assets/background/others.webp);
+    background-repeat: no-repeat;
+  }
 }
